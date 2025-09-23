@@ -5,15 +5,29 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Heimside - Regnbyen Bergen A/S</title>
-        <link rel="stylesheet" href="/semesteropg.css">
+        <link rel="stylesheet" href="../semesteropg.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-        <div w3-include-html="header.html"></div>
+        <header class="main-header">
+            <div class="container">
+                <div class="meny">
+                    <div>
+                        <img src="../bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
+                    </div>
+                    <nav class="navbar">
+                        <a href="../index.html">Hjem</a>
+                        <a href="../produkt.html">Produkter</a>
+                        <a href="../info.html">Info</a>
+                        <a href="../omoss.html">Om oss</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
         <section class="bilde">
             <div id="heimsidebilde">
-                <img id="heimsideskuleplass" src="/bilder/" alt="heimsidebilde">
+                <img id="heimsideskuleplass" src="../bilder/bryggen.jpg" alt="heimsidebilde">
                 <div class="welcome-text">Velkommen til regnbyen Bergen!</div>
             </div>
         </section>
@@ -30,6 +44,6 @@
         <script>w3.includeHTML();</script>
     </body>
     <footer>
-        <div w3-include-html="footer.html"></div>
+        <div w3-include-html="../footer.html"></div>
     </footer>
 </html>
