@@ -240,5 +240,97 @@ h1, h2, h3, p, table, ul, li {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* ******************
+ * Produkt hovedside
+ * ******************/
+ .product-categories {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 30px;
+   margin-top: 10px;
+   padding: 10px;
+}
+
+.category-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: rgb(104, 151, 238);
+}
+
+.category-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+}
+
+.category-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.05);
+}
+
+.category-card h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.category-card p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .product-categories {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .category-card {
+        padding: 20px;
+    }
+    
+    .category-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
   
 
