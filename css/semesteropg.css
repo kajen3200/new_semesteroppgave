@@ -115,6 +115,64 @@ h1, h2, h3, p, table, ul, li {
 }
 
 /* ******************
+ * Dropdown meny
+ * ******************/
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(104, 151, 238);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover > a {
+    background-color: rgb(104, 151, 238);
+    color: white;
+}
+
+/* Sikrer at dropdown-lenken har samme styling som andre navbar-lenker */
+.dropdown > a {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 28px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* ******************
  * Bunnteksten
  * ******************/
 .footer-innhold {
