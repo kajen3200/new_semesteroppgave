@@ -5,12 +5,116 @@
     <title>BILER</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="semesteropg.css">
+    <link rel="stylesheet" href="../css/semesteropg.css">
 </head>
 <body>
-    <div w3-include-html="header.html"></div>
-    <div class="content">
-        
+    <header class="main-header">
+        <div class="container">
+            <div class="meny">
+                <div>
+                    <a href="../../index.html">
+                        <img src="../../bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <a href="../../index.html">Hjem</a>
+                    <div class="dropdown">
+                        <a href="../pages/produkt.html">Produkter</a>
+                        <div class="dropdown-content">
+                            <a href="Produktting.html">Produktting</a>
+                            <a href="biler.html">Biler</a>
+                            <a href="hus.html">Hus</a>
+                        </div>
+                    </div>
+                    <a href="../pages/info.html">Info</a>
+                    <a href="../pages/omoss.html">Om oss</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="bil_head">
+        <div class="bil_intro">
+            <h1>Biler</h1>
+            <p>Her finner du en samling med biler og forslåtte bil-verksted</p>
+        </div>
+        <!-- værksted seksjon -->
+        <div class="bil_workshop">
+            <h2>Værksted vi foreslår:</h2>
+            <div class="bil_workshop-cards">
+                <div class="bil_workshop-card">
+                    <img src="https://via.placeholder.com/150x100" alt="Workshop 1">
+                    <p><strong>Sted:</strong> Nord Bergen</p>
+                    <p><strong>Pris:</strong> 500 kr/t</p>
+                    <p><strong>Åpent:</strong> 08:00–16:00</p>
+                    <p><strong>Travelhet:</strong> Lav</p>
+                    <p><strong>Eksperter i:</strong> Elbiler</p>
+                </div>
+                <div class="bil_workshop-card">
+                    <img src="https://via.placeholder.com/150x100" alt="Workshop 2">
+                    <p><strong>Sted:</strong> Sør Bergen</p>
+                    <p><strong>Pris:</strong> 600 kr/t</p>
+                    <p><strong>Åpent:</strong> 09:00–17:00</p>
+                    <p><strong>Travlhet:</strong> Høy</p>
+                    <p><strong>Eksperter i:</strong> Bensinbiler</p>
+                </div>
+                <div class="bil_workshop-card">
+                    <img src="https://via.placeholder.com/150x100" alt="Workshop 3">
+                    <p><strong>Sted:</strong> Odense</p>
+                    <p><strong>Pris:</strong> 550 kr/t</p>
+                    <p><strong>Åbent:</strong> 07:00–15:00</p>
+                    <p><strong>Travlhed:</strong> Mellem</p>
+                    <p><strong>Eksperter i:</strong> Dieselbiler</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bil_cont">
+        <!-- bil seksjon -->
+        <div class="bil_section">
+            <div class="bil_filters">
+                <input type="radio" id="filter-all" name="bil-filter" checked>
+                <label for="filter-all">Alle</label>
+                <input type="radio" id="filter-el" name="bil-filter">
+                <label for="filter-el">EL-biler</label>
+                <input type="radio" id="filter-bensin" name="bil-filter">
+                <label for="filter-bensin">Bensin-biler</label>
+                <input type="radio" id="filter-diesel" name="bil-filter">
+                <label for="filter-diesel">Diesel-biler</label>
+
+                <div class="bil_list">
+                    <div class="bil_card el">
+                        <img src="https://via.placeholder.com/300x150" alt="en EL-bil">
+                        <div class="bil_details">
+                            <h3>EL-bil</h3>
+                            <ul>
+                                <li><strong>Type:</strong> Elbil</li>
+                                <li><strong>Rekkevidde:</strong> 500 km</li>
+                                <li><strong>0–100 km/t:</strong> 3.1 sek</li>
+                                <li><strong>Toppfart:</strong> 261 km/t</li>
+                                <li><strong>Pris:</strong> 400.000 kr</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bil_card bensin">
+                        <img src="https://via.placeholder.com/300x150" alt="en bensin bil">
+                        <div class="bil_details">
+                            <h3>Bensin-bil</h3>
+                            <ul>
+                                <li><strong>Type:</strong> Bensin bil</li>
+                                <li><strong>Motor:</strong> V8, 5.0L</li>
+                                <li><strong>0–100 km/t:</strong> 4.5 sek</li>
+                                <li><strong>Toppfart:</strong> 250 km/t</li>
+                                <li><strong>Pris:</strong> 600.000 kr</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bil_card diesel">Diesel bil</div>
+                    <div class="bil_card el">El-bil</div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
