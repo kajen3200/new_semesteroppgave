@@ -4,15 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Adrian Austefjord - Regnbyen Bergen A/S</title>
-        <link rel="stylesheet" href="/css/semesteropg.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/css/adrian.css">
     </head>
     <body>
         <header class="main-header">
             <div class="container">
                 <div class="meny">
                     <div>
-                        <img src="/bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
+                        <img src="/bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;" alt="enkel logo av bergen med regn på seg">
                     </div>
                     <nav class="navbar">
                         <a href="/index.html">Hjem</a>
@@ -23,18 +22,42 @@
                 </div>
             </div>
         </header>
-        <div w3-include-html="forside/header.html"></div>
         
-        <div class="content" style="margin-top: 111px; margin-left: -10px;">
-
-            <img src="/bilder/adrian.jpg" alt="Profil bilde av Adrian Austefjord" style="width:200px; height:200px; float: left; margin-right: 20px; border-radius: 50%; object-fit: cover;" >
-
-            <h1>Adrian Austefjord</h1>
-            <p style="margin-right: 700px;">Adrian er en veldig interressang og uinterressang person som vet veldig mye men også veldig lite.
-            han er både smart og dum, aktiv men lat, sprek men i dårlig fysisk form.</p>
+        <div class="content">
+            <div class="profile_pic">
+                <img src="/bilder/adrian.jpg" alt="Profil bilde av Adrian Austefjord">
+            </div>
+            <div class="top_text">
+                <h1>Adrian Austefjord</h1>
+                <h2>Prosjekt medlem</h2>
+                <p>Adrian er en stille type men han vet aldri når han skal holde skjeft.
+                    Han er modig men også utrolig feig.
+                    Han er smart men også ganske dum.
+                    Han er ærlig men kan ikke stoppe å lyge.
+                    Han er organisert men utrolig rotete.
+                    Han har en imponerende hukkomelse men kan ikke huske hvorfor han gikk inn i et nytt rom.
+                    Han jobber alltid men bare når det var i siste liten.
+                    Det er ingenting som skiller han ut fra en folkemengde, men allikavel er han lett å finne.
+                </p>
+            </div>
+            <div class="info">
+                <ul>
+                    <li><strong> Adresse: </strong> 123 Falsk adress, Bergen By</li>
+                    <li><strong> TLF: </strong> +47 12 34 56 78</li>
+                    <li><strong> Arbeids tider: </strong> MAN - FRE, 08:00 - 16:00</li>
+                    <li><strong> Programmerings språk: </strong> HTML, CSS, JAVASCRIPT, PYTHON</li>
+                    <li><strong> Programmerings verktøy: </strong> PYcharm, GIT, IntelliJ, Notepad+</li>
+                    <li><strong> Tilgjengelig på: </strong>
+                        <a href="https://gmail.com" target="_blank">Email</a>,
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>,
+                        <a href="https://discord.com" target="_blank">Discord</a>,
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                    </li>
+                </ul>
+                <button class="cv-button" onclick="alert('Under maintenance ;)')">
+                    Download CV (PDF)
+                </button>
+            </div>
         </div>
-        
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
-        <script>w3.includeHTML();</script>
     </body>
 </html>
