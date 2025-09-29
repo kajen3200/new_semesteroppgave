@@ -5,18 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Karinne Blikra Jenssen - Regnbyen Bergen A/S</title>
         <link rel="stylesheet" href="../../css/semesteropg.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
       <header class="main-header">
             <div class="container">
                 <div class="meny">
                     <div>
-                        <img src="../../bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
+                        <a href="../../index.html">
+                            <img src="../../bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
+                        </a>
                     </div>
                     <nav class="navbar">
                         <a href="../../index.html">Hjem</a>
-                        <a href="../pages/produkt.html">Produkter</a>
+                        <div class="dropdown">
+                            <a href="../pages/produkt.html">Produkter</a>
+                            <div class="dropdown-content">
+                                <a href="Produktting.html">Produktting</a>
+                                <a href="biler.html">Biler</a>
+                                <a href="hus.html">Hus</a>
+                            </div>
+                        </div>
                         <a href="../pages/info.html">Info</a>
                         <a href="../pages/omoss.html">Om oss</a>
                     </nav>
@@ -78,8 +86,6 @@
             </div>
          </div>
       </div>
-      <script src="https://www.w3schools.com/lib/w3.js"></script>
-      <script>w3.includeHTML();</script>
    
     </body>
 </html>

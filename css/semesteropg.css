@@ -115,47 +115,130 @@ h1, h2, h3, p, table, ul, li {
 }
 
 /* ******************
- * Bunnteksten
+ * Dropdown meny
  * ******************/
-.footer-innhold {
-    background-size: cover;
-    background-position: center;
-}
-.footer .box-container{
+.dropdown {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.footer .box-container .kontakt-sesjon {
-    flex: 1 1 25rem;
-    margin: 2rem;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
 }
 
-.footer .box-container .kontakt-sesjon h3 {
-    font-size: 2.5rem;
-    color: var(--blue);
-    padding: 1 rem 0;
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
 }
 
-.footer .box-container .kontakt-sesjon p i{
-    padding-right: .5rem;
-    color: var(--blue);
+.dropdown-content a:hover {
+    background-color: rgb(104, 151, 238);
+    color: white;
 }
 
-.footer .box-container .kontakt-sesjon a{
-    font-size: 1.5rem;
-    color:#888;
-    padding: 1rem 0;
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
+.dropdown:hover > a {
     background-color: rgb(104, 151, 238);
+    color: white;
+}
+
+/* Sikrer at dropdown-lenken har samme styling som andre navbar-lenker */
+.dropdown > a {
     color: black;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 28px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* ******************
+ * Bunnteksten
+ * ******************/
+.footer-innhold {
+    background-color: rgb(96, 117, 157);
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-innhold .box-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.footer-innhold .kontakt-sesjon,
+.footer-innhold .info-seksjon,
+.footer-innhold .apper-seksjon {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-innhold h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.footer-innhold p {
+    margin: 8px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-innhold a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-innhold a:hover {
+    color: #f0f0f0;
+}
+
+/* Responsivt design */
+@media (max-width: 768px) {
+    .footer-innhold .box-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-innhold .kontakt-sesjon,
+    .footer-innhold .info-seksjon,
+    .footer-innhold .apper-seksjon {
+        margin: 15px 0;
+        padding: 0;
+        display: block;
+    }
+}
 
 /* ******************
  * Team medlemmer
@@ -240,6 +323,98 @@ h1, h2, h3, p, table, ul, li {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* ******************
+ * Produkt hovedside
+ * ******************/
+ .product-categories {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 30px;
+   margin-top: 10px;
+   padding: 10px;
+}
+
+.category-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: rgb(104, 151, 238);
+}
+
+.category-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+}
+
+.category-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.05);
+}
+
+.category-card h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.category-card p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .product-categories {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .category-card {
+        padding: 20px;
+    }
+    
+    .category-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
   
 
 /* ******************
@@ -257,9 +432,11 @@ h1, h2, h3, p, table, ul, li {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: (2, 600px);
     gap: 1.5rem;
     padding: 2rem;
+    justify-content: center;
 }
 
 .product-card {
@@ -267,7 +444,9 @@ h1, h2, h3, p, table, ul, li {
     padding: 1rem;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
 
 /* ************
 * Produkt hus side
@@ -315,3 +494,10 @@ h1, h2, h3, p, table, ul, li {
     margin-top: -3px;
     margin-bottom: -3px;
 }
+
+.product-image {
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+

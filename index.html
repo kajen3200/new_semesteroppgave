@@ -6,18 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Heimside - Regnbyen Bergen A/S</title>
         <link rel="stylesheet" href="css/semesteropg.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
     </head>
     <body>
         <header class="main-header">
             <div class="container">
                 <div class="meny">
                     <div>
-                        <img src="bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
+                        <a href="index.html">
+                            <img src="bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
+                        </a>
                     </div>
                     <nav class="navbar">
                         <a href="index.html">Hjem</a>
-                        <a href="pages/produkt.html">Produkter</a>
+                        <div class="dropdown">
+                            <a href="pages/produkt.html">Produkter</a>
+                            <div class="dropdown-content">
+                                <a href="pages/Produktting.html">Produktting</a>
+                                <a href="pages/biler.html">Biler</a>
+                                <a href="pages/hus.html">Hus</a>
+                            </div>
+                        </div>
                         <a href="pages/info.html">Info</a>
                         <a href="pages/omoss.html">Om oss</a>
                     </nav>
@@ -40,33 +49,28 @@
         </section>
 
         
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
-        <script>w3.includeHTML();</script>
-    </body>
-    <footer class = "footer-innhold">
-    <div class = "box-container">
+        <footer class="footer-innhold">
+            <div class="box-container">
+                <div class="kontakt-sesjon">
+                    <h3>Kontakt oss</h3>
+                    <p>+47 557 78 899</p>
+                    <p>RB@regnbyenbergen.no</p>
+                    <p>Innerdalsveien 28, 5063 Bergen</p>
+                </div>
 
-        <div class = "kontakt-sesjon">
-            <h3>Kontakt oss</h3>
-            <p><i class ="fas fa-phone"></i>+47 557 78 899</p>
-            <p><i class = "fas fa-envelope"></i> RB@regnbyenbergen.no</p>
-            <p><i class = "fas fa-marker-alt"></i>Kontor:</p>
-                <p><a href="https://www.google.com/maps//+Vestlandet/Inndalsveien+28,+5063" target="blank" tabindex="13">Innerdalsveien 28, 5063 Bergen</a></p>
-            
-        </div>
+                <div class="info-seksjon">
+                    <h3>Info</h3>
+                    <p>Regnbyen Bergen A/S</p>
+                    <p>Om at rettigheter er forbeholdt.</p>
+                </div>
 
-        <div class = "info-seksjon">
-            <h3>Info</h3>
-            <p>En liten tekst om oss</p>
-            <p>Få med en tekst om opphavsrett</p>
-        </div>
-
-        <div class = "apper-seksjon">
-            <h3>Våre apper</h3>
-            <a heref="https://www.instagram.com/regnbyenbergen/" tabindex="16">Instagram</a>
-            <a heref="facebook_link">Facebook</a>
-            <a heref="twitter_link">Twitter</a>
-        </div>
+                <div class="apper-seksjon">
+                    <h3>Våre apper</h3>
+                    <a href="https://www.instagram.com/regnbyenbergen/" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                </div>
             </div>
+            
         </footer>
 </html>
