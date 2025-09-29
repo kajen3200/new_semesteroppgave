@@ -374,9 +374,11 @@ h1, h2, h3, p, table, ul, li {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: (2, 600px);
     gap: 1.5rem;
     padding: 2rem;
+    justify-content: center;
 }
 
 .product-card {
@@ -384,5 +386,11 @@ h1, h2, h3, p, table, ul, li {
     padding: 1rem;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+.product-image {
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
