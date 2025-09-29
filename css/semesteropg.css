@@ -447,8 +447,57 @@ h1, h2, h3, p, table, ul, li {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+
+/* ************
+* Produkt hus side
+* ************/
+
+.produkt-grid { 
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-right: 50%;
+}
+.produkt-box { 
+    background-color: rgba(171, 225, 190, 0.997);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.htable { 
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.husinfo {
+    position: absolute;
+    right: 50px;
+    top: 220px;
+    width: 375px;
+    transform: translateX(-50%);
+}
+.bydeler {
+    font-size: 18px;
+}
+.bydelerhus {
+    margin-bottom: -15px;
+    margin-top: -1px;
+}
+.hth, .htd {
+    padding: 3px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.produkter {
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
 .product-image {
     height: 250px;
     width: 250px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
