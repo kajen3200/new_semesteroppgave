@@ -1,40 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vegard Audunhus - Regnbyen Bergen A/S</title>
-        <link rel="stylesheet" href="../../css/semesteropg.css">
-    </head>
-    <body>
-        <header class="main-header">
-            <div class="container">
-                <div class="meny">
-                    <div>
-                        <a href="../../index.html">
-                            <img src="../../bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;">
-                        </a>
-                    </div>
-                    <nav class="navbar">
-                        <a href="../../index.html">Hjem</a>
-                        <div class="dropdown">
-                            <a href="../pages/produkt.html">Produkter</a>
-                            <div class="dropdown-content">
-                                <a href="Produktting.html">Produktting</a>
-                                <a href="biler.html">Biler</a>
-                                <a href="hus.html">Hus</a>
-                            </div>
-                        </div>
-                        <a href="../pages/info.html">Info</a>
-                        <a href="../pages/omoss.html">Om oss</a>
-                    </nav>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om meg - Vegard Audunhus</title>
+    <link rel="stylesheet" href="../../css/semesteropg.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="meny">
+                <div>
+                    <a href="../../index.html">
+                        <img src="../../bilder/logo_regnbyen_bergen_01.png" style="width:120px;height:120px;" alt="Logo">
+                    </a>
                 </div>
+                <nav class="navbar">
+                    <a href="../../index.html">Hjem</a>
+                    <div class="dropdown">
+                        <a href="../pages/produkt.html">Produkter</a>
+                        <div class="dropdown-content">
+                            <a href="Produktting.html">Produktting</a>
+                            <a href="biler.html">Biler</a>
+                            <a href="hus.html">Hus</a>
+                        </div>
+                    </div>
+                    <a href="../pages/info.html">Info</a>
+                    <a href="../pages/omoss.html">Om oss</a>
+                </nav>
             </div>
-        </header>
-        
-        <div class="content">
-            <h1>Vegard Audunhus</h1>
+        </div>
+    </header>
+    
+    <div class="content">
+        <h1>Vegard Audunhus</h1>
+
+        <!-- Profilseksjon med bilde til venstre og tekst til høyre -->
+        <div style="display:flex;align-items:center;gap:40px;flex-wrap:wrap;margin:30px 0;">
+            <!-- Bytt ut linken under med din egen bilde-fil -->
+            <img src="../../bilder/vegard.jpg" 
+                 alt="Profilbilde av Vegard Audunhus" 
+                 style="width:220px;height:auto;border-radius:50%;flex-shrink:0;">
+
+            <div style="max-width:600px;">
+                <h2>Hvem er jeg?</h2>
+                <p>
+                    Hei! Jeg heter Vegard Audunhus og er en 20 år gammel student fra Bergen. 
+                    Jeg er opptatt av teknologi, kreativ problemløsning og liker å kombinere 
+                    design med praktiske løsninger. Til daglig studerer jeg informatikk og 
+                    jobber deltid med webutvikling.
+                </p>
+            </div>
         </div>
         
-    </body>
+        <section>
+            <h2>Mine interesser</h2>
+            <ul>
+                <li>Webutvikling og programmering</li>
+                <li>Fotografi og grafisk design</li>
+                <li>Fjellturer og friluftsliv</li>
+                <li>Gaming og e-sport</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Kontakt meg</h2>
+            <p>
+                📧 E-post: <a href="mailto:vegard.audunhus@example.com">vegard.audunhus@regnbyenbergen.no</a><br>
+                📱 Telefon: +47 987 65 432<br>
+                🌍 LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/vegardaudunhus</a>
+            </p>
+            <div style="background-color:#f0f8ff;padding:15px;border-radius:10px;margin-top:15px;border:1px solid #cce0ff;">
+                ✉️ Jeg er tilgjengelig på e-post fra mandag til fredag klokken <strong>10:00 til 15:00</strong>.
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vegard Audunhus - Alle rettigheter forbeholdt</p>
+        </div>
+    </footer>
+</body>
 </html>

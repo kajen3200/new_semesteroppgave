@@ -1,0 +1,239 @@
+
+body {
+    background: #fff;
+}
+
+.main-header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+body {
+    margin-top: 150px;
+}
+
+.content {
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Sørger for at alt innhold er under overskriften */
+h1, h2, h3, p, table, ul, li {
+    margin-top: 30px;
+}
+
+/* Legg til ekstra avstand for de første elementene etter overskriften */
+.content > h1:first-child,
+.content > h2:first-child,
+.content > p:first-child {
+    margin-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.meny {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    margin: 2px;
+    margin-right: 30px;
+    padding: 10px;
+}
+  
+  
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 28px;
+    font-weight: 500;
+}
+  
+.navbar a:hover {
+    background-color: rgb(104, 151, 238);
+}
+
+.kontakt-boks {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.kontakt-venstre {
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.kontakt-hogre {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+input, textarea {
+    font-size: 16px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #6d99e0;
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #5a87c9;
+    transform: scale(1.05);
+}
+
+.kontakt-hogre p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.kontakt-hogre a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* kontaktside css */
+.content {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.kontakt-boks {
+    background: #f2f2f2;
+    display: flex;
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.kontakt-venstre {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.kontakt-hogre {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #6d99e0;
+    color: #f2f2f2;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.container p{
+    margin-bottom: 40px;
+}
+
+.input-rad {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-rad .input-gruppe {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #6d99e0;
+}
+
+button {
+    background: #6d99e0;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: alias;
+    box-shadow: 0px 5px 15 0px rgba(28, 0, 181, 0.3);
+}
+
+.kontakt-venstre h3 {
+    color: #6d99e0;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.kontakt-hogre h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+
+
