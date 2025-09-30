@@ -117,7 +117,7 @@ h1, h2, h3, p, table, ul, li {
 /* ******************
  * Dropdown meny
  * ******************/
-.dropdown {
+ .dropdown {
     position: relative;
     display: flex;
     align-items: center;
