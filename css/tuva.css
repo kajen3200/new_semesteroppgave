@@ -1,16 +1,33 @@
+.tuva-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: (1);
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-content: right;
+}
+
+.tuva-card {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 .bilde {
-    width: 200px;
-    height: 200px;
-    align-content: last baseline;
+    width: 300px;
+    height: 300px;
+    
+    object-fit: cover;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 6px white;
     
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);}
 
 .tekst {
     text-align: right;
     padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .tekst h1 {
